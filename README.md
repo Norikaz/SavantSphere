@@ -13,7 +13,7 @@ TBD
 ### Componenets 
 Should follow this structure
 
-![Screen Shot 2023-09-10 at 8 48 01 PM](https://github.com/Norikaz/web-dev-project-1/assets/53831591/10dee6d0-ac63-49fb-bd5c-d9a20aadb6da)
+[Sample](https://cuny-my.sharepoint.com/:i:/g/personal/norik_zhagui69_qmail_cuny_edu/ESHZa8w1_kRFrJPUwNlhLp8BHO0K2u495hB0REJPf1hQ3A?e=wl9gZq)
 
 ### Props
 If your component takes in any props define an interface for them at the top most level underneath the imports 
