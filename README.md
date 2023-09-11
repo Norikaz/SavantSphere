@@ -11,9 +11,7 @@ TBD
 
 ## Team Coding conventions
 ### Componenets 
-Should follow this structure
-
-[Sample](https://cuny-my.sharepoint.com/:i:/g/personal/norik_zhagui69_qmail_cuny_edu/ESHZa8w1_kRFrJPUwNlhLp8BHO0K2u495hB0REJPf1hQ3A?e=wl9gZq)
+Should follow this [structure](https://cuny-my.sharepoint.com/:i:/g/personal/norik_zhagui69_qmail_cuny_edu/ESHZa8w1_kRFrJPUwNlhLp8BHO0K2u495hB0REJPf1hQ3A?e=wl9gZq)
 
 ### Props
 If your component takes in any props define an interface for them at the top most level underneath the imports 
