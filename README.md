@@ -21,6 +21,16 @@ If your component takes in any props define an interface for them at the top mos
 ### Test
 Test structure should be a mirror of the src file and follow the naming convention sameNameAsFileBeingTested.test.tsx
 
+## Development and Pull Request 
+We will be using Git branch work flow 
+- create a new branch for every new feature that is being implimented
+- You must unit test that code if there is functionality
+- 
+IMPORTANT: Make sure to commit once to a branch and any changes after should be an ammed commit and not a new commit. This will allow the reivewers to see the diff between revisions easier and make reviews more efficient
+
+Pull Request should not be more than one page if you have to much code in one pull request you will have to split them up into multiple differnt pull request if possible do not overwhelem the reviewers with too much code.
+Look into [Sub branching](https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch) to optimize your development workflow in order to not be slowed down while waiting on code to be reviewed or use it to have a follow up pull request if your original one was to large
+
 ## Available Scripts
 
 In the project directory, you can run:
