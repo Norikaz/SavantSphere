@@ -12,8 +12,8 @@ const AboutMe = () => {
 			<div>
 				<h1>About me</h1>
 				<p className="description">
-					I am a software developer at Queens College University. I was
-					<strong> intern for Amazon</strong> and learn how to{' '}
+					I am a software developer at Queens College University. I was an
+					<strong> intern for Amazon</strong> and learned how to{' '}
 					<strong>develop, desgin and maintain </strong> full stack web apps.
 				</p>
 			</div>
