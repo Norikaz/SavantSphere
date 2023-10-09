@@ -35,3 +35,11 @@
 		height: 35%;
 	}
 }
+
+.inactive {
+	filter: blur(4px);
+}
+
+.active {
+	filter: blur(0px);
+}
