@@ -21,6 +21,41 @@
 	animation-fill-mode: forwards;
 }
 
+.sam-profile-pic {
+	height: 180px;
+	margin-top: 3rem;
+	border-radius: 35px;
+}
+
+.description-sam {
+	line-height: 1.2em;
+	animation: flip 1s forwards;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+.sam-glow {
+	animation: glow 1s ease-in-out infinite alternate;
+	color: hsl(54, 64%, 87%);
+}
+
+@keyframes flip {
+	0%,
+	80% {
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 20px #ff0bae;
+	}
+	to {
+		text-shadow:
+			0 0 50px #ff0000,
+			0 0 50px #e5ff00;
+	}
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;

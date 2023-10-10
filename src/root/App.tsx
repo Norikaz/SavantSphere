@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ROUTES } from './routes-constants';
 import HomePage from '../pages/HomePage';
 import DevTeamOne from '../pages/AndrewNorik/DevTeamOne';
-import DevTeamTwo from '../pages/DevTeamTwo';
+import DevTeamTwo from '../pages/TasneemSamiul/DevTeamTwo';
 
 const App = () => {
 	return (
