@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { ROUTES } from './routes-constants'
-import HomePage from '../pages/HomePage'
-import DevTeamOne from '../pages/DevTeamOne'
-import DevTeamTwo from '../pages/DevTeamTwo'
+import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ROUTES } from './routes-constants';
+import HomePage from '../pages/HomePage';
+import DevTeamOne from '../pages/AndrewNorik/DevTeamOne';
+import DevTeamTwo from '../pages/DevTeamTwo';
 
 const App = () => {
 	return (
@@ -16,7 +16,7 @@ const App = () => {
 				<Route path={ROUTES.DEV_TEAM_TWO} element={<DevTeamTwo />} />
 			</Routes>
 		</Router>
-	)
-}
+	);
+};
 
-export default App
+export default App;
