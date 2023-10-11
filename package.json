@@ -16,6 +16,7 @@
 		"clsx": "^2.0.0",
 		"eslint-config-react-app": "^7.0.1",
 		"lucide-react": "^0.284.0",
+		"luxon": "^3.4.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.15.0",
@@ -51,6 +52,7 @@
 	},
 	"devDependencies": {
 		"@babel/plugin-proposal-private-property-in-object": "7.21.11",
+		"@types/luxon": "^3.3.2",
 		"@typescript-eslint/parser": "^5.62.0",
 		"eslint": "^8.50.0",
 		"eslint-config-standard": "^17.1.0",
