@@ -8,7 +8,7 @@ const AboutMe = () => {
 				src="/images/norik_profile_pic.jpg"
 				alt="Not Found"
 				className="norik-profile-pic"
-			></img>
+			/>
 			<div>
 				<h1>About me</h1>
 				<p className="description">
