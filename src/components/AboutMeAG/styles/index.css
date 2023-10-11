@@ -1,0 +1,59 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	perspective: 16px;
+	position: relative;
+}
+
+.drewheader {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	transform-style: preserve-3d;
+	z-index: -2;
+}
+
+.background {
+	transform: translateZ(-15px) scale(2);
+}
+
+.foreground {
+	transform: translateZ(-10px) scale(1.65);
+}
+
+.background,
+.foreground {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+	z-index: -1;
+}
+
+.title {
+	font-size: 7rem;
+	color: white;
+	text-shadow: 0 0 5px black;
+	position: relative;
+}
+
+.icon img {
+	width: 100px;
+	height: 100px;
+	font: 2rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.aboutMe {
+	font-size: 2rem;
+	color: lightblue;
+}
