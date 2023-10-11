@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutMeSam from '../../components/AboutMe/AboutMeSamTas'
+import AboutMeSam from '../../components/AboutMeSamTas'
 
 const DevTeamTwo = () => {
 	return (
