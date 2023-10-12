@@ -1,0 +1,38 @@
+.form-container {
+	width: 70%;
+	margin: 10em auto;
+	background-color: rgba(13, 13, 13, 0.703);
+	color: white;
+	border: 1px solid rgb(169, 162, 162);
+	border-radius: 10px;
+}
+
+.form-container h1 {
+	text-align: center;
+}
+
+.form-container h3 {
+	font-size: x-large;
+}
+
+.muted-text {
+	display: block;
+	font-weight: lighter;
+	font-size: large;
+	color: rgba(159, 157, 157, 0.783);
+}
+
+.step-controller {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin: 2% 0px;
+
+	.match-form-btn {
+		border-radius: 0.375rem;
+		border: 1px solid rgb(169, 162, 162);
+		background-color: aliceblue;
+		color: black;
+		padding: 1% 1%;
+	}
+}

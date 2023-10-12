@@ -1,0 +1,29 @@
+.skill-concentration h3,
+label,
+input {
+	margin-left: 15px;
+}
+
+.skill {
+	margin: 0px 10px;
+	padding-right: 15px;
+	width: fit-content;
+	border-right: 1px solid rgb(169, 162, 162);
+}
+
+.task-description-container {
+	margin-top: 50px;
+
+	.task-input {
+		margin-left: 15px;
+		display: block;
+		width: 60%;
+		padding: 15px;
+		margin-bottom: 15px;
+		border: 1px solid #ccc;
+		background-color: #0e141b;
+		color: white;
+		border-radius: 10px;
+		box-sizing: border-box;
+	}
+}

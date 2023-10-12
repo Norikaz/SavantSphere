@@ -1,0 +1,40 @@
+.empty-bar {
+	width: 300px;
+	height: 25px;
+	border-radius: 10px;
+	background-color: gray;
+	margin: 0px 35%;
+}
+
+.fill-amount {
+	background-color: rgb(80, 197, 247);
+	border-radius: 10px;
+	width: 50%;
+	text-align: center;
+}
+
+.half-bar {
+	animation: half 1s linear forwards;
+}
+
+.full-bar {
+	animation: full 1s linear forwards;
+}
+
+@keyframes half {
+	from {
+		width: 100%;
+	}
+	to {
+		width: 50%;
+	}
+}
+
+@keyframes full {
+	from {
+		width: 50%;
+	}
+	to {
+		width: 100%;
+	}
+}
