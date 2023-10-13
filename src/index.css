@@ -13,6 +13,7 @@ body {
 		sans-serif;
 	color: grey;
 	background-color: hsl(212deg, 32%, 8%);
+	overflow-x: hidden;
 }
 
 h1,
@@ -26,6 +27,5 @@ strong {
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
