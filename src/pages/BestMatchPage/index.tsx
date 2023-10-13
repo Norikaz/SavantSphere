@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Button } from '../../components/ui/button';
-import FormOne from '../../components/BestMatchForms/FormOne';
+import FormOne from '../../components/Forms/BestMatchForms/FormOne';
+import ProgressBar from '../../components/ui/ProgressBar';
+import FormTwo from '../../components/Forms/BestMatchForms/FormTwo';
 
 import './styles/index.css';
-import ProgressBar from '../../components/ui/ProgressBar';
 
 const MAX_SLIDES = 2;
 const MIN_SLIDES = 1;
@@ -14,6 +15,7 @@ const BestMatchPage = () => {
 		skill: '',
 		description: '',
 	});
+	const [timeFrame, setTimeFrame] = useState('1');
 
 	const onPrevSlide = () => {
 		setStep(step - 1);
@@ -38,9 +40,7 @@ const BestMatchPage = () => {
 						/>
 					)}
 					{step == 2 && (
-						<div>
-							<h1>Form 2</h1>
-						</div>
+						<FormTwo setTimeFrame={setTimeFrame} timeFrame={timeFrame} />
 					)}
 					<div className="step-controller">
 						<Button
@@ -57,6 +57,9 @@ const BestMatchPage = () => {
 						>
 							next
 						</Button>
+						{step == 2 && (
+							<Button className="match-form-btn submit">submit</Button>
+						)}
 					</div>
 				</form>
 			</div>

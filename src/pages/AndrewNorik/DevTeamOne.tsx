@@ -1,7 +1,7 @@
 import React from 'react';
-import AboutMe from '../../components/AboutMeNZ';
-import AboutMeAG from '../../components/AboutMeAG';
-import Carousel from '../../components/Carousel';
+import AboutMe from "../../components/AboutMe's/AboutMeNZ";
+import AboutMeAG from "../../components/AboutMe's/AboutMeAG";
+import Carousel from '../../components/ui/Carousel';
 
 import './styles/index.css';
 

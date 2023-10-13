@@ -1,5 +1,6 @@
 .form-container {
 	width: 950px;
+	height: 500px;
 	margin: 10em auto;
 	background-color: rgba(13, 13, 13, 0.703);
 	color: white;
@@ -34,5 +35,17 @@
 		background-color: aliceblue;
 		color: black;
 		padding: 1% 1%;
+	}
+	.submit {
+		border: 1px solid #305a86;
+		background-color: #87ccef;
+		color: #000000;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	.submit:hover {
+		background-color: #0056b3;
+		color: rgb(255, 255, 255);
 	}
 }

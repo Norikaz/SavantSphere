@@ -3,7 +3,7 @@ import './styles/index.css';
 
 const AboutMe = () => {
 	return (
-		<div className="about-me">
+		<div className="about-me-nz">
 			<img
 				src="/images/norik_profile_pic.jpg"
 				alt="Not Found"
