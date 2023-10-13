@@ -25,5 +25,5 @@
 		"src/__tests__/root/App.test.tsx",
 		"src/__tests__/setupTests.ts",
 		"src/pages/BestMatchPage/index.tsx"
-	]
+, "src/tailwind.config.ts"	]
 }

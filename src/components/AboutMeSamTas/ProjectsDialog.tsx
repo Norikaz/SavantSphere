@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 const SysAdminDialog = () => {
 	return (
 		<Dialog>
-			<DialogTrigger className="dialog-btn">Learn More</DialogTrigger>
+			<DialogTrigger className="dialog-btn-v2">Learn More</DialogTrigger>
 			<DialogContent className="dialog-content">
 				<DialogHeader>
 					<DialogTitle>Programming Projects</DialogTitle>
