@@ -1,0 +1,66 @@
+.tech-stack-container {
+	display: flex;
+}
+
+.tech-stack-dialog-container {
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+}
+
+.development-envoirment {
+	width: 45%;
+}
+.development-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.testing-envoirment {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	border-left: 1px solid rgb(169, 162, 162);
+}
+
+.tech-stack-dialog-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15%;
+	padding: 12px 12px;
+	border: 1px solid #0e141b;
+	background-color: #3d6174;
+	color: #ffffff;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+
+	.expand-icon {
+		position: relative;
+		right: 30%;
+	}
+}
+
+.tech-stack-dialog-btn:hover {
+	background-color: #0056b3;
+	color: rgb(255, 255, 255);
+	transition: color 0.3s ease;
+	animation: glow-btn 1s ease-in-out infinite alternate;
+}
+
+.tech-stack-dialog-content {
+	backdrop-filter: blur(20px);
+	background-color: rgba(0, 0, 0);
+	border: solid #27272a 2px;
+	border-radius: 10px;
+	padding: 1em 1em 1em 1em;
+	box-shadow:
+		rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	position: fixed;
+	top: 6em;
+	left: 1em;
+	width: 95%;
+	height: 90%;
+}
