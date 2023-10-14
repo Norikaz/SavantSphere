@@ -1,55 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
 .wrapper {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
 	overflow-y: auto;
 	overflow-x: hidden;
+}
+
+.parallax-container {
+	height: 100vh;
+	overflow: hidden;
 	perspective: 16px;
-	position: relative;
 }
 
 .drewheader {
-	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	height: 100%;
-	transform-style: preserve-3d;
-	z-index: -2;
+	font-size: 27px;
 }
 
-.background {
-	transform: translateZ(-15px) scale(2);
+.aboutMe {
+	width: 400px;
+	height: 200px;
+	padding: 20px;
+	margin-left: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.foreground {
-	transform: translateZ(-10px) scale(1.65);
+.icon img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display: block;
 }
 
 .background,
 .foreground {
 	position: absolute;
-	height: 100%;
+	top: 0;
+	left: 0;
 	width: 100%;
-	object-fit: fill;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.background {
+	background-image: url('imgs/REALBACKGROUD.png');
+	z-index: -2;
+}
+
+.foreground {
+	background-image: url('imgs/Layer 1.png');
 	z-index: -1;
-}
-
-.title {
-	font-size: 7rem;
-	color: white;
-	text-shadow: 0 0 5px black;
-	position: relative;
-}
-
-.icon img {
-	width: 100px;
-	height: 100px;
-	font: 2rem;
-	border-radius: 50%;
-	object-fit: cover;
-}
-.aboutMe {
-	font-size: 2rem;
-	color: lightblue;
 }
