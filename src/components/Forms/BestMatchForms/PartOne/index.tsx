@@ -1,34 +1,36 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-import './styles/index.css'
+import './styles/index.css';
 
-interface FormOneProps {
+interface PartOneProps {
 	setFormOneOptions: React.Dispatch<
 		React.SetStateAction<{
-			skill: string
-			description: string
+			skill: string;
+			description: string;
 		}>
-	>
+	>;
 	formOptions: {
-		skill: string
-		description: string
-	}
+		skill: string;
+		description: string;
+	};
 }
-const FormOne = ({ setFormOneOptions, formOptions }: FormOneProps) => {
+const PartOne = ({ setFormOneOptions, formOptions }: PartOneProps) => {
 	const handleRadioChange = (value: string) => {
-		setFormOneOptions({ ...formOptions, skill: value })
-	}
+		setFormOneOptions({ ...formOptions, skill: value });
+	};
 
 	const handleTextChange = (value: string) => {
-		setFormOneOptions({ ...formOptions, description: value })
-	}
+		setFormOneOptions({ ...formOptions, description: value });
+	};
 
 	return (
 		<>
 			<div className="skill-concentration">
 				<h3>
 					Concentration
-					<span className="muted-text">What section do you perfer the developer to be proficient in</span>
+					<span className="muted-text">
+						What section do you perfer the developer to be proficient in
+					</span>
 				</h3>
 
 				<input
@@ -38,7 +40,7 @@ const FormOne = ({ setFormOneOptions, formOptions }: FormOneProps) => {
 					value="web"
 					checked={formOptions.skill == 'web'}
 					onChange={event => {
-						handleRadioChange(event.target.value)
+						handleRadioChange(event.target.value);
 					}}
 				/>
 				<label htmlFor="web-dev" className="skill best-match-label">
@@ -52,7 +54,7 @@ const FormOne = ({ setFormOneOptions, formOptions }: FormOneProps) => {
 					value="moblie"
 					checked={formOptions.skill == 'moblie'}
 					onChange={event => {
-						handleRadioChange(event.target.value)
+						handleRadioChange(event.target.value);
 					}}
 				/>
 				<label htmlFor="moblie-dev" className="skill best-match-label">
@@ -66,7 +68,7 @@ const FormOne = ({ setFormOneOptions, formOptions }: FormOneProps) => {
 					value="AI"
 					checked={formOptions.skill == 'AI'}
 					onChange={event => {
-						handleRadioChange(event.target.value)
+						handleRadioChange(event.target.value);
 					}}
 				/>
 				<label htmlFor="moblie-dev" className="skill best-match-label">
@@ -80,7 +82,7 @@ const FormOne = ({ setFormOneOptions, formOptions }: FormOneProps) => {
 					value="security"
 					checked={formOptions.skill == 'security'}
 					onChange={event => {
-						handleRadioChange(event.target.value)
+						handleRadioChange(event.target.value);
 					}}
 				/>
 				<label htmlFor="Information Security" className="best-match-label">
@@ -88,13 +90,20 @@ const FormOne = ({ setFormOneOptions, formOptions }: FormOneProps) => {
 				</label>
 			</div>
 			<div className="task-description-container">
-				<label htmlFor="description" className="task-description-label best-match-label">
+				<label
+					htmlFor="description"
+					className="task-description-label best-match-label"
+				>
 					Task Description
 				</label>
-				<textarea name="description" placeholder="Describe your problem" className="task-input" />
+				<textarea
+					name="description"
+					placeholder="Describe your problem"
+					className="task-input"
+				/>
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default FormOne
+export default PartOne;
