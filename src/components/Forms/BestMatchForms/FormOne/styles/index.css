@@ -1,6 +1,6 @@
 .skill-concentration h3,
-label,
-input {
+.best-match-label,
+.best-match-input {
 	margin-left: 15px;
 }
 
