@@ -1,0 +1,7 @@
+.spacer {
+	z-index: 1;
+	position: relative;
+	background-color: #a6dcf6;
+	width: 100vw;
+	height: 30vh;
+}

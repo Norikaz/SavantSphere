@@ -1,6 +1,6 @@
 .section-nz {
 	height: 100vh;
-	margin-bottom: 100px;
+	margin-bottom: 130px;
 }
 
 .wrapper {
@@ -8,5 +8,4 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 	perspective: 16px;
-	position: relative;
 }
