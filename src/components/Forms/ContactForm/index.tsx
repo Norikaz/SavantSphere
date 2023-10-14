@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles/index.css';
-import { Input } from '../ui/input';
-import { Button } from '../ui/button';
-import { Textarea } from '../../components/ui/textarea';
-import { Label } from '../ui/label';
+import { Input } from '../../ui/input';
+import { Button } from '../../ui/button';
+import { Textarea } from '../../ui/textarea';
+import { Label } from '../../ui/label';
 
 const ContactForm = () => {
 	return (
