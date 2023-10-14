@@ -4,6 +4,7 @@ import AboutMeAG from '../../components/AboutMeAll/AboutMeAG';
 import Carousel from '../../components/ui/Carousel';
 import TechStackDialog from '../../components/ui/TechStackDialog';
 import ExperienceAG from '../../components/AboutMeAll/ExperienceAG';
+import TechStackAG from '../../components/AboutMeAll/TechStackAG';
 
 import './styles/index.css';
 
@@ -18,6 +19,7 @@ const DevTeamOne = () => (
 			<AboutMeAG />
 		</div>
 		<ExperienceAG />
+		<TechStackAG />
 	</>
 );
 
