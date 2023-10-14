@@ -7,6 +7,13 @@
 	overflow-x: hidden;
 }
 
+.parallax-container::before {
+	content: '';
+	display: block;
+	height: 50px; /* adjust as needed */
+	background-color: lightblue;
+}
+
 .parallax-container {
 	height: 100vh;
 	overflow: hidden;
@@ -54,10 +61,18 @@
 
 .background {
 	background-image: url('./REALBACKGROUD.png');
+	background-position-y: 450;
 	z-index: -2;
 }
 
 .foreground {
 	background-image: url('./Background_copy_2.png');
+	background-position-y: 0;
 	z-index: -1;
+}
+
+.spacer {
+	height: 40px;
+	background-color: lightblue;
+	width: 100%;
 }
