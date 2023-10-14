@@ -8,6 +8,7 @@ import DevTeamOne from '../pages/AndrewNorik/DevTeamOne';
 import DevTeamTwo from '../pages/TasneemSamiul/DevTeamTwo';
 import ContactPage from '../pages/ContactPage';
 import BestMatchPage from '../pages/BestMatchPage/';
+import SignUpPage from '../pages/SignUpPage';
 
 const App = () => {
 	return (
@@ -18,6 +19,7 @@ const App = () => {
 				<Route path={ROUTES.DEV_TEAM_TWO} element={<DevTeamTwo />} />
 				<Route path={ROUTES.CONTACT_PAGE} element={<ContactPage />} />
 				<Route path={ROUTES.BEST_MATCH_PAGE} element={<BestMatchPage />} />
+				<Route path={ROUTES.SIGN_UP_PAGE} element={<SignUpPage />} />
 			</Routes>
 		</Router>
 	);
