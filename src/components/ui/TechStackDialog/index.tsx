@@ -5,7 +5,7 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
-} from '../ui/dialog';
+} from '../dialog';
 import { Expand } from 'lucide-react';
 
 import './styles/index.css';
@@ -74,7 +74,7 @@ const TechStackDialog = () => {
 								<div>
 									<img
 										src="https://png2.cleanpng.com/sh/8b34e221d88e85d601894204ba5bfcf5/L0KzQYm3VsIzN6pAkJH0aYP2gLBuTfp2dpp5ReZuc4Swccb7jB1ifJp0hp98b3b3h7L5hb11baR5gdDwLYXxecW0lPV0fJpzRadrMnS4dYXoU8FibmUARqkDNEW1RIO8UcUzQWcAUas6NEKzQ4a1kP5o/kisspng-junit-test-automation-software-testing-unit-testin-5b2d5e4a31af49.7845242515296999142035.png"
-										className="norik-profile-pic"
+										className="junit-img"
 									/>
 									<img
 										src="https://site.mockito.org/javadoc/current/org/mockito/logo.png"

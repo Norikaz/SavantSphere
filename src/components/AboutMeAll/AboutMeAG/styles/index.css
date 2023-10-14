@@ -53,11 +53,11 @@
 }
 
 .background {
-	background-image: url('src/components/AboutMeAG/styles/REALBACKGROUD.png');
+	background-image: url('./REALBACKGROUD.png');
 	z-index: -2;
 }
 
 .foreground {
-	background-image: url('src/components/AboutMeAG/styles/Background_copy_2.png');
+	background-image: url('./Background_copy_2.png');
 	z-index: -1;
 }

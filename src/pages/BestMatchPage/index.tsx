@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '../../components/ui/button';
-import FormOne from '../../components/BestMatchForms/FormOne';
+import FormOne from '../../components/Forms/BestMatchForms/FormOne';
 
 import './styles/index.css';
 import ProgressBar from '../../components/ui/ProgressBar';

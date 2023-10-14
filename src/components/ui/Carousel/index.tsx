@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Cards from './Cards';
 import { onShiftCard } from './carouselHelper';
-import { Button } from '../../components/ui/button';
+import { Button } from '../button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import './styles/index.css';

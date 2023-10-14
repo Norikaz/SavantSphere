@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { DateTime } from 'luxon';
-import Card from '../../../../components/Carousel/Card';
+import Card from '../../../../components/ui/Carousel/Card';
 import '@testing-library/jest-dom/extend-expect';
 
 jest.mock('luxon', () => {
