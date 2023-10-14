@@ -35,4 +35,10 @@
 		color: black;
 		padding: 1% 1%;
 	}
+
+	.match-form-btn:disabled {
+		background-color: rgba(239, 239, 239, 0.3);
+		color: rgba(16, 16, 16, 0.3);
+		border-color: rgba(16, 16, 16, 0.3);
+	}
 }
