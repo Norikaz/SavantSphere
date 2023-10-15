@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles/index.css';
-import { Avatar, AvatarFallback, AvatarImage } from 'src/components/ui/avatar';
 import BlogWebsiteDialog from './BlogWebsiteDialog';
 import ArtifusionDialog from './ArtifusionDialog';
 import ReadTellDialog from './ReadTellDialog';

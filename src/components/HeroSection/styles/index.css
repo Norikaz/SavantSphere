@@ -46,6 +46,10 @@
 	background-color: black;
 }
 
+.meet-devs-txt {
+	animation: flip 1s forwards;
+}
+
 .meet-dev-section p {
 	animation: flip 1s forwards;
 }

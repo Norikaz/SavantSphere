@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles/index.css';
-import { Avatar, AvatarFallback, AvatarImage } from 'src/components/ui/avatar';
 import SysAdminDialog from './SysAdminDialog';
 import ProjectsDialog from './ProjectsDialog';
 import { Card } from './animatedCard';
@@ -37,7 +36,7 @@ const AboutMeSam = () => {
 					</p>
 					<p className="sam-description">
 						Frameworks: React, Next.js, Express.js, Django, Flask, FastAPI,
-						TensorflowL
+						Tensorflow
 					</p>
 					<p className="sam-description">
 						Tools: Linux, Git, Github, AWS, GCP, Docker, Firebase
