@@ -7,11 +7,13 @@ import ExperienceAG from '../../components/AboutMeAll/ExperienceAG'
 import TechStackAG from '../../components/AboutMeAll/TechStackAG'
 import AGspacer from '../../components/AboutMeAll/AGspacer'
 import Footer from '../../components/Footer'
+import Navbar from '../../components/Navbar'
 
 import './styles/index.css'
 
 const DevTeamOne = () => (
 	<>
+		<Navbar />
 		<div className="section-nz">
 			<AboutMe />
 			<Carousel />

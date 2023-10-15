@@ -4,6 +4,7 @@ import PartOne from '../../components/Forms/BestMatchForms/PartOne'
 import PartTwo from '../../components/Forms/BestMatchForms/PartTwo'
 import ProgressBar from '../../components/ui/ProgressBar'
 import Footer from '../../components/Footer'
+import Navbar from '../../components/Navbar'
 
 import './styles/index.css'
 
@@ -28,6 +29,7 @@ const BestMatchPage = () => {
 
 	return (
 		<>
+			<Navbar />
 			<div className="form-container">
 				<header>
 					<h1>Find The Best Match</h1>

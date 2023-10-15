@@ -10,10 +10,16 @@
 	padding: 15px 0;
 	border: 1px #15212e solid;
 }
-
+.footer-logo-txt {
+	animation: fadeIn 1s ease-in;
+}
 .footer-links {
 	list-style-type: none;
 	padding: 0;
+	animation: fadeIn 1s ease-in;
+}
+.footer-rights {
+	animation: fadeIn 1s ease-in;
 }
 
 .footer-links li {
@@ -28,4 +34,14 @@
 
 .footer-links a:hover {
 	text-decoration: underline;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
