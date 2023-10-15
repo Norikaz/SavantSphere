@@ -33,14 +33,14 @@ h1.experiences {
 	height: 200px;
 	margin: 10px;
 	border-radius: 10px;
-	transform: translateX(300%);
+	transform: translateX(400%);
 	transition: transform 0.5s ease;
 	box-shadow: 15px 5px 5px black;
 	z-index: 5;
 }
 
 .box:nth-of-type(even) {
-	transform: translateX(-300%);
+	transform: translateX(-400%);
 	z-index: 5;
 }
 
