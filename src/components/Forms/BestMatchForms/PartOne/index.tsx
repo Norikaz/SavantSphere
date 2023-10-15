@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './styles/index.css';
 
 interface PartOneProps {
-	setFormOneOptions: React.Dispatch<
+	setPartOneOptions: React.Dispatch<
 		React.SetStateAction<{
 			skill: string;
 			description: string;
@@ -14,13 +14,13 @@ interface PartOneProps {
 		description: string;
 	};
 }
-const PartOne = ({ setFormOneOptions, formOptions }: PartOneProps) => {
+const PartOne = ({ setPartOneOptions, formOptions }: PartOneProps) => {
 	const handleRadioChange = (value: string) => {
-		setFormOneOptions({ ...formOptions, skill: value });
+		setPartOneOptions({ ...formOptions, skill: value });
 	};
 
 	const handleTextChange = (value: string) => {
-		setFormOneOptions({ ...formOptions, description: value });
+		setPartOneOptions({ ...formOptions, description: value });
 	};
 
 	return (
@@ -100,6 +100,10 @@ const PartOne = ({ setFormOneOptions, formOptions }: PartOneProps) => {
 					name="description"
 					placeholder="Describe your problem"
 					className="task-input"
+					value={formOptions.description}
+					onChange={event => {
+						handleTextChange(event.target.value);
+					}}
 				/>
 			</div>
 		</>
