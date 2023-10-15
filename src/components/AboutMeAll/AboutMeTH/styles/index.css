@@ -126,7 +126,7 @@
 	align-items: center;
 	min-height: 400px;
 	padding-top: 100px;
-	background: #000000;
+	background-color: hsl(212deg, 32%, 8%);
 }
 
 .dialog-btn-v2 {
