@@ -2,27 +2,38 @@ import React, { useState } from 'react';
 
 import './styles/index.css';
 
-interface FormTwoProps {
-	setTimeFrame: React.Dispatch<React.SetStateAction<string>>;
-	timeFrame: string;
+interface PartTwoProps {
+	setPartTwoOptions: React.Dispatch<
+		React.SetStateAction<{
+			timeFrame: string;
+			description: string;
+		}>
+	>;
+	formOptions: {
+		timeFrame: string;
+		description: string;
+	};
 }
 
-const PartTwo = ({ setTimeFrame, timeFrame }: FormTwoProps) => {
+const PartTwo = ({ setPartTwoOptions, formOptions }: PartTwoProps) => {
 	return (
 		<>
 			<div className="date-slider-container">
-				<label htmlFor="date-slider">Expected Time for project</label>
+				<label htmlFor="date-slider">Months to complete project</label>
 				<input
 					type="range"
 					className="date-slider"
 					min={1}
 					max={12}
-					value={timeFrame}
+					value={formOptions.timeFrame}
 					onChange={event => {
-						setTimeFrame(event.target.value);
+						setPartTwoOptions({
+							...formOptions,
+							timeFrame: event.target.value,
+						});
 					}}
 				/>
-				<span>{timeFrame}</span>
+				<span>{formOptions.timeFrame}</span>
 			</div>
 			<div className="tech-experience-container">
 				<label htmlFor="description" className="task-description-label">
@@ -32,6 +43,13 @@ const PartTwo = ({ setTimeFrame, timeFrame }: FormTwoProps) => {
 					name="description"
 					placeholder="React, TypeScript, AWS ..."
 					className="task-input"
+					value={formOptions.description}
+					onChange={event => {
+						setPartTwoOptions({
+							...formOptions,
+							description: event.target.value,
+						});
+					}}
 				/>
 			</div>
 		</>
