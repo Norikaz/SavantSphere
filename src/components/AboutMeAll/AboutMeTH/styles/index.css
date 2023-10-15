@@ -1,0 +1,169 @@
+.about-me {
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	width: 80%;
+	gap: 5rem;
+	align-items: flex-start;
+	color: rgb(189, 182, 182);
+}
+
+.description {
+	opacity: 0;
+	animation: fadeIn 2s ease-in;
+	animation-fill-mode: forwards;
+}
+
+.tas-profile-pic {
+	height: 180px;
+	margin-top: 3rem;
+	border-radius: 35px;
+	animation: flip 1s forwards;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+.tasn-description {
+	line-height: 1.2em;
+	animation: flip 1s forwards;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+.tas-glow {
+	animation: glow 1s ease-in-out infinite alternate;
+	color: hsl(54, 64%, 87%);
+}
+
+@keyframes flip {
+	0%,
+	1% {
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 0px #ffffff;
+	}
+	to {
+		text-shadow:
+			0 0 0px #ffffff,
+			0 0 0px #ffffff;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.dialog-btn {
+	padding: 5px 10px;
+	border: 1px solid #0e141b;
+	background-color: #3d6174;
+	color: rgb(255, 255, 255);
+	border-radius: 7px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.dialog-btn:hover {
+	background-color: #0056b3;
+	color: rgb(255, 255, 255);
+	transition: color 0.3s ease;
+	animation: glow-btn 1s ease-in-out infinite alternate;
+}
+
+.bounce {
+	position: absolute;
+	margin-left: 0.3em;
+	animation: bounce 2s ease-in-out;
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+.dialog-content {
+	background-color: rgba(0, 0, 0, 0.9);
+	border: solid #27272a 2px;
+	border-radius: 10px;
+	padding: 1em 1em 1em 1em;
+	box-shadow:
+		rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	position: fixed;
+	top: 8em;
+	left: 23em;
+	width: 50%;
+	height: 50%;
+	display: flex;
+	z-index: 1000;
+	animation: fadeIn 0.4s ease-in;
+}
+
+.tas-portfolio {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 400px;
+	padding-top: 100px;
+	background: #000000;
+}
+
+.dialog-btn-v2 {
+	background-color: #fbeee0;
+	margin-left: 0.3em;
+	border: 2px solid #422800;
+	border-radius: 40px;
+	box-shadow: #422800 4px 4px 0 0;
+	color: #422800;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 12px;
+	padding: 0 12px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.dialog-btn-v2:hover {
+	background-color: #fff;
+	transform: scale(1.1);
+	/* will-change: transform; */
+	transition: all 0.1s ease-in-out;
+}
+
+.dialog-btn-v2:active {
+	box-shadow: #422800 2px 2px 0 0;
+	transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+	.button-74 {
+		min-width: 120px;
+		padding: 0 25px;
+	}
+}

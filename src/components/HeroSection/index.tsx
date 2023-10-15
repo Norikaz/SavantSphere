@@ -1,5 +1,5 @@
-import React from 'react'
-import './styles/index.css'
+import React from 'react';
+import './styles/index.css';
 
 const HeroSection = () => {
 	return (
@@ -22,18 +22,19 @@ const HeroSection = () => {
 							<p>Norik Zhagui</p>
 						</div>
 						<div className="image-link">
-							<img src="https://i.imgur.com/nn88IGZ.jpg" alt="Image 4" />
+							<img src="https://i.imgur.com/GYTjqyR.jpg" alt="Image 4" />
 							<p>Tasneem Hasanat</p>
 						</div>
 					</div>
 					<p>
-						We aim to match a customer looking <strong>solve complex problems</strong> with the developers who best meet their needs to{' '}
-						<strong>build technical solutions.</strong>
+						We aim to match a customer looking{' '}
+						<strong>solve complex problems</strong> with the developers who best
+						meet their needs to <strong>build technical solutions.</strong>
 					</p>
 				</div>
 			</div>
 		</section>
-	)
-}
+	);
+};
 
-export default HeroSection
+export default HeroSection;
