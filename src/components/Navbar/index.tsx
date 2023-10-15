@@ -30,8 +30,8 @@ const Navbar = () => {
 				<Link to={'/contact'} className="navbar-item">
 					Contact Us
 				</Link>
-				<Link to={'/sign-up'} className="navbar-item">
-					Sign Up
+				<Link to={'/login'} className="navbar-item">
+					Login
 				</Link>
 			</ul>
 		</nav>

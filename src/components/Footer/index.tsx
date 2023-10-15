@@ -9,16 +9,16 @@ const Footer = () => {
 			<h3 className="footer-logo-txt">SavantSphere</h3>
 			<ul className="footer-links">
 				<li>
-					<Link to={'/'}>About</Link>
+					<Link to={'/'}>Home</Link>
 				</li>
 				<li>
 					<Link to={ROUTES.CONTACT_PAGE}>Contact</Link>
 				</li>
 				<li>
-					<Link to={'/'}>Developers</Link>
+					<Link to={'#'}>Developers</Link>
 				</li>
 				<li>
-					<Link to={'/'}>Careers</Link>
+					<Link to={'#'}>Careers</Link>
 				</li>
 			</ul>
 			<p className="footer-rights">&copy; {new Date().getFullYear()} SavantSphere. All rights reserved.</p>
