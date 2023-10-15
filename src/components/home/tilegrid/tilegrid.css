@@ -1,0 +1,52 @@
+.grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px;
+}
+
+.tile {
+	background-color: #f2f2f2;
+	width: calc(25% - 20px);
+	height: calc(
+		(25% * 1.54) - 20px
+	); /* This keeps the aspect ratio as 276x424 */
+	transition:
+		transform 0.3s,
+		width 0.3s;
+	overflow: hidden;
+	position: relative;
+	flex: 1;
+}
+
+.tile:hover {
+	transform: scale(1.1); /* Adjust the scale value as needed */
+	width: calc(27% - 20px);
+}
+
+.tile img {
+	width: 100%;
+	height: auto;
+	transition: opacity 0.3s;
+}
+
+.tile:hover img {
+	opacity: 0.8;
+}
+
+.tile-text {
+	position: absolute;
+	bottom: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.tileGrid-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* centers tiles horizontally */
+	align-items: center; /* centers tiles vertically */
+	gap: 16px; /* space between tiles */
+}

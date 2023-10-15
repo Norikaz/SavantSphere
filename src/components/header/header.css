@@ -1,0 +1,68 @@
+header {
+	background-color: #000; /* Set to pure black */
+	height: 10vh;
+	padding: 15px 0;
+	position: sticky;
+	width: 100%;
+	z-index: 999;
+	transition: all 0.5s ease;
+}
+header img {
+	width: 170px;
+}
+header a {
+	margin-left: 30px;
+	transition: 0.5s;
+	font-weight: 500;
+	color: #fff; /* Set text color to white */
+}
+header a:hover {
+	color: #6600cc; /* Set hover color to purple similar to GPT-4 color */
+}
+header span {
+	width: auto;
+	padding: 0px 6px;
+	background: #27ae60;
+	border-radius: 50px;
+	color: #ffffff;
+	margin-right: 4px;
+	font-weight: 400;
+}
+header h4 {
+	font-weight: 500;
+	margin-right: 20px;
+}
+header .toggle {
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	header {
+		padding: 0;
+	}
+	header img {
+		margin-top: 30px;
+	}
+	header .button {
+		display: none;
+	}
+	header .nav .flex {
+		display: none;
+	}
+	header .toggle {
+		display: block;
+		margin-top: 20px;
+	}
+	header .small {
+		position: absolute;
+		top: 10vh;
+		left: 0;
+		width: 100%;
+		background-color: #27ae60;
+		padding: 20px;
+	}
+	header li a {
+		display: inline-block;
+		margin-bottom: 20px;
+		color: #fff; /* Set text color to white for mobile view */
+	}
+}

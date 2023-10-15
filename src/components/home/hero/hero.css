@@ -1,0 +1,42 @@
+.hero {
+	background-color: #000; /* Full black background */
+	color: #fff; /* White text color */
+	padding: 50px 0; /* Some padding for breathing space */
+	display: flex; /* Flexbox for centering */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+
+.hero h1 {
+	font-size: 6rem; /* Adjust as needed */
+	font-weight: bold; /* Bold text */
+	letter-spacing: 0.3rem; /* Spacing between letters for better readability */
+	text-transform: uppercase; /* Making sure it's all in uppercase */
+	overflow: hidden; /* Hide the overflow */
+}
+
+.hero h1 span {
+	display: inline-block;
+	transform: translateX(-200%); /* Start from farther left, beyond the screen */
+	animation: slideIn 1.5s forwards; /* Increased duration for smoother animation */
+}
+
+@keyframes slideIn {
+	to {
+		transform: translateX(0);
+	}
+}
+
+.hero h1:hover span {
+	animation: jiggleHorizontal 0.7s infinite; /* Slower jiggle on hover */
+}
+
+@keyframes jiggleHorizontal {
+	0%,
+	100% {
+		transform: translateX(-1px);
+	}
+	50% {
+		transform: translateX(1px);
+	}
+}
