@@ -1,0 +1,58 @@
+.hero {
+	padding: 3em 0;
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+.hero-content h1 {
+	font-size: 72px;
+	margin-bottom: 1em;
+	animation: flip 1s forwards;
+}
+
+.image-links {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.image-link {
+	margin: 15px;
+	text-align: center;
+}
+
+.image-link img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #2c2c2e;
+	margin-bottom: 15px;
+}
+
+.image-link p {
+	font-size: 18px;
+	color: #555;
+	animation: flip 1s forwards;
+}
+
+.image-link img:hover {
+	transform: scale(1.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.meet-dev-section {
+	padding: 2em;
+	background-color: black;
+}
+
+.meet-dev-section p {
+	animation: flip 1s forwards;
+}
+
+@keyframes flip {
+	0%,
+	1% {
+		transform: rotateY(360deg);
+	}
+}
