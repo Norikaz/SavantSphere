@@ -6,7 +6,7 @@ import { ROUTES } from '../../root/routes-constants'
 const Footer = () => {
 	return (
 		<div className="footer-container">
-			<h3>SavantSphere</h3>
+			<h3 className="footer-logo-txt">SavantSphere</h3>
 			<ul className="footer-links">
 				<li>
 					<Link to={'/'}>About</Link>
@@ -21,7 +21,7 @@ const Footer = () => {
 					<Link to={'/'}>Careers</Link>
 				</li>
 			</ul>
-			<p>&copy; {new Date().getFullYear()} SavantSphere. All rights reserved.</p>
+			<p className="footer-rights">&copy; {new Date().getFullYear()} SavantSphere. All rights reserved.</p>
 		</div>
 	)
 }
