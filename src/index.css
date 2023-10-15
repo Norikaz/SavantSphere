@@ -29,3 +29,9 @@ strong {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.navbar-spacing-global {
+	margin-top: 8em;
+	color: transparent;
+	user-select: none;
+}
