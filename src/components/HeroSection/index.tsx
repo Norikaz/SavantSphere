@@ -11,27 +11,19 @@ const HeroSection = () => {
 					<h3 className="meet-devs-txt">Meet our developers</h3>
 					<div className="image-links">
 						<div className="image-link">
-							<Link to={'/dev-team-Tasneem-Samiul'}>
-								<img src="https://i.imgur.com/ikqR1Pw.jpg" alt="Image 1" />
-							</Link>
+							<img src="https://i.imgur.com/ikqR1Pw.jpg" alt="Image 1" />
 							<p>Samiul Azam Sami</p>
 						</div>
 						<div className="image-link">
-							<Link to={'/dev-team-Andrew-Norik'}>
-								<img src="https://i.imgur.com/yeaTJPM.jpg" alt="Image 2" />
-							</Link>
+							<img src="https://i.imgur.com/yeaTJPM.jpg" alt="Image 2" />
 							<p>Andrew Gao</p>
 						</div>
 						<div className="image-link">
-							<Link to={'/dev-team-Andrew-Norik'}>
-								<img src="https://i.imgur.com/4jfZ45r.jpg" alt="Image 3" />
-							</Link>
+							<img src="https://i.imgur.com/4jfZ45r.jpg" alt="Image 3" />
 							<p>Norik Zhagui</p>
 						</div>
 						<div className="image-link">
-							<Link to={'/dev-team-Tasneem-Samiul'}>
-								<img src="https://i.imgur.com/GYTjqyR.jpg" alt="Image 4" />
-							</Link>
+							<img src="https://i.imgur.com/GYTjqyR.jpg" alt="Image 4" />
 							<p>Tasneem Hasanat</p>
 						</div>
 					</div>
