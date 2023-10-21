@@ -11,7 +11,7 @@ const PartTwo = ({ setTimeFrame, timeFrame }: FormTwoProps) => {
 	return (
 		<>
 			<div className="date-slider-container">
-				<label htmlFor="date-slider">Expected Time for project</label>
+				<label htmlFor="date-slider">Expected Time</label>
 				<input
 					type="range"
 					className="date-slider"
